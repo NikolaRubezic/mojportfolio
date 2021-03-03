@@ -39,6 +39,10 @@ header nav ul li a:hover {
   color: #079cf3;
 }
 
+.meni2 {
+  display: none;
+}
+
 .flex-kutija {
   display: -webkit-box;
   display: -ms-flexbox;

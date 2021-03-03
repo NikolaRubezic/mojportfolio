@@ -10,6 +10,8 @@
     #about p{
         font-size: 20px;
     }
+
+
 }
 
 @media screen and (max-width: 1100px){
@@ -30,15 +32,15 @@
         font-size: 70px;
     }
 
+
+
 }
 
 
 
 @media screen and (max-width: 641px)
 {
-    /* header{
-        position: relative;
-    } */
+
     #banner h1{
         font-size: 35px;
     }
@@ -81,10 +83,30 @@
 
 
     .meni {
-        justify-content: flex-start;
+        display:none;
     }
-    .meni a{
-        font-size: 4px;
+    .meni2{
+        display: block;
+    }
+
+    .meni2 ul{
+        list-style-type: none;
     }
     
+    .meni2 ul li{
+        padding: 0px;
+    }
+
+    .meni2 ul li a{
+        color: #e2e2e2;
+        text-decoration: none;
+        border-bottom: 1px solid #e2e2e2;
+        font-size: 14px;
+
+    }
+
+    header{
+        position: relative;
+        height: 120px;
+    } 
 }
