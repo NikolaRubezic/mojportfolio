@@ -1,0 +1,90 @@
+@media screen and (max-width: 1440px)
+{
+    #about #kutija_autor{
+        width: 40%;
+    }
+    #about #selfie{
+        width: 40%;
+    }
+
+    #about p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    
+ 
+    #about #kutija_autor{
+        width: 80%;
+    }
+
+    #about p{
+        font-size: 18px;
+    }
+
+    #about #selfie{
+        width: 80%;
+    }
+    #banner h1{
+        font-size: 70px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 641px)
+{
+    /* header{
+        position: relative;
+    } */
+    #banner h1{
+        font-size: 35px;
+    }
+ 
+    #projects .red-projekata img{
+                width: 80%;
+                height: 150px;
+                margin: 0px 50px;
+            }
+
+    #projects .red-projekata p{
+        font-size: 10px;
+    }
+
+    #skills .red-vestina {
+        display: flex;
+        flex-flow: column wrap; 
+        justify-content: center;
+    }
+
+    #about #kutija_autor{
+        width: 90%;
+    }
+
+    #about p{
+        font-size: 18px;
+    }
+
+    #about img{
+        width: 100%;
+    }
+
+    #contact {
+        width: 90%;
+    }
+
+    #contact #socials i{
+        font-size: 30px;
+    }
+
+
+    .meni {
+        justify-content: flex-start;
+    }
+    .meni a{
+        font-size: 9px;
+    }
+    
+}

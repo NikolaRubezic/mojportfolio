@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="Assets/Styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="Assets/Styles/responsive.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nikola Rubezic" />
+    <link rel="icon" href="assets/images/icon.png" type="image/gif" />
+    <meta name="description" content="Nikola Rubezic, a web developer" />
+    <meta name="keywords" content="portfolio, developer, skilled, projects, work, applications, CSS, SQL, JavaScript,front end, web" />
+    <script src="https://kit.fontawesome.com/e8bb9dd0ba.js" crossorigin="anonymous"></script>
+
+    <title>Nikola Rubezic - portfolio</title>
+  </head>
+
+  <body>
+    <header> 
+        <nav>
+            <ul class="meni">
+                <li class="flex-item"><a href="#skills">Skills</a></li>
+                <li class="flex-item"><a href="#projects">Projects</a></li>
+                <li class="flex-item"><a href="#about">About</a></li>
+                <li class="flex-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+      
+    </header>
+
+    <main>
+        <div id="banner">
+            <div id="tekst-banner">
+            <h1 class="opis-banner">Nikola Rubezic<br />Web developer <br />Belgrade</h1>
+            </div>
+        </div>
+
+        <div id="skills">
+            <h2>Skills</h2>
+  
+            <article class="red-vestina ">
+                <figure class="flex-item">
+                    <img src="assets/images/html5.png" alt="html5 logo"/>
+                    <figcaption>HTML 5</figcaption>
+                </figure>
+                <figure class="flex-item">
+                    <img src="assets/images/css3.png" alt="css3 logo"/>
+                    <figcaption>CSS 3</figcaption>
+                </figure>
+                <figure class="flex-item">
+                    <img src="assets/images/js.png" alt="js logo"/>
+                    <figcaption>JavaScript</figcaption>
+                </figure>
+                <!-- <div class="cleaner"></div> -->
+            </article>
+
+            <article class="red-vestina ">
+                <figure class="flex-item">
+                    <img src="assets/images/sass.png" alt="sass logo"/>
+                    <figcaption>Sass</figcaption>
+                </figure>
+                <figure class="flex-item">
+                    <img src="assets/images/c.png" alt="c logo"/>
+                    <figcaption>C</figcaption>
+                </figure>
+                <figure class="flex-item">
+                    <img src="assets/images/sql.png" alt="sql logo"/>
+                    <figcaption>SQL</figcaption>
+                </figure>
+                <!-- <div class="cleaner"></div> -->
+            </article>
+  
+        </div>
+
+
+        <div id="projects">
+            <h2>Projects</h2> <br />
+            <!-- <div id="slike-projekata" > -->
+                <div class="red-projekata">
+
+                    <div class="flex-item projekat-slika">
+                        <a href="https://burgerkonoba.000webhostapp.com/">  
+                            <img src="assets/images/burgerkonoba.png" alt="project burger konoba" />
+                        </a>
+                        <p>Burger Konoba website <br />
+                            A commercial website written in Html and CSS
+                        </p>
+                    </div>
+                    <div class="flex-item projekat-slika">
+                        <a href="http://www.dummylink.com">  
+                             <img src="assets/images/webkalendar.jpg" alt="project web calender" />
+                        </a>
+                        <p>Web calender App <br />
+                            A quick web app written in Html, CSS and JavaScript
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="red-projekata">
+                    <div class="flex-item projekat-slika">
+                        <a href="http://www.dummylink.com">  
+                            <img src="assets/images/onlinemuseum.jpg" alt="project online museum" />
+                        </a>
+                        <p>Interactive online museum <br />
+                            A museum-like experience written in Javascript
+                        </p>
+                    </div>
+                    <div class="flex-item projekat-slika">
+                        <a href="http://www.dummylink.com">  
+                         <img src="assets/images/templebar.jpg" alt="project temple bar" />
+                        </a>
+                        <p>Temple Bar website<br />
+                            A commercial website written in Html, CSS, JS and SQL
+                        </p>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </div>
+
+
+        <div id="about">
+            <div class="omotac">
+                <h2>About me</h2>
+                <div class="flex-kutija">
+                    <div id="kutija_autor" >
+                        <h4>Nikola Rubežić</h4>
+                        <br /><br />
+                        <p>I've lived in Belgrade my entire life, where I'm also professionally 
+                            based for on-site offers. That being said, I'm also very open to remote
+                            offers. <br />  <br />
+                            I have worked for about a year, both on-site and remote, as a support engineer
+                            on a large DMS Web Application. My work mostly consisted of writing SQL reports, 
+                            fixing simple front end and back end bugs and updating the database upon request.
+                            <br /> <br />
+                            My English is at an advanced level and I'm entirely opened to being mentored.
+                        </p>
+                    </div>
+
+                    <div id="selfi" >
+                        <img src="assets/images/nikola.png" alt="picture of me" />
+                    </div>
+                </div>
+                <!-- <div class="cleaner">
+                </div> -->
+            </div>
+        </div>
+
+        <div id="contact" class="omotac">
+            <h2>Contact me</h2>
+
+            <div id="forma">
+                <form>
+                    <div class="forma_red">
+                        <label for="name">First and last name</label>
+                        <input type="text" id="name" name="name" placeholder="or the name of your company" class="forma_input" required />
+                    </div>
+                    <div class="forma_red">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email"
+                            class="forma_input" required />
+                    </div>
+
+                    <div class="forma_red">
+                        <label for="comment">Your message</label>
+                        <textarea id="comment" rows=5 placeholder="up to 1024 characters"
+                            class="forma_input" required></textarea>
+                    </div>
+                    <button type="submit" class="forma_input">Send</button>
+                </form>
+            </div>
+
+			<div id="socials"> 
+				<a href="https://www.facebook.com/"><i class="fab fa-facebook-square ikonica"></i></a>
+				<a href="https://www.instagram.com/"><i class="fab fa-instagram ikonica"></i></a>
+				<a href="https://www.twitter.com/"><i class="fab fa-twitter-square ikonica"></i></a>
+
+			</div>
+            <h5>Tel: +381 62 123 45 89</h5>
+            <h5>E-mail: nikola.rube@gmail.com</h5>
+        </div>
+
+    </main>
+
+    <footer>
+        
+        <a href="#banner"><i class="fas fa-arrow-up"></i></a>
+        <p>Copyright&copy;Nikola Rubežić</p>
+        
+        
+    </footer>
+
+  </body>
+
+</html>

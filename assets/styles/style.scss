@@ -1,0 +1,253 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cleaner{
+	clear:both;
+}
+
+$skoroBela: #e2e2e2;
+$svetloPlava: #079cf3;
+$tamnoSiva: #1c1c1c;
+
+header{
+    background-color: $tamnoSiva;
+    width: 100%;
+    position: fixed;
+    height: 70px;
+    font-size: 20px;
+	top: 0px;
+	z-index: 99;
+
+    nav{
+
+        ul{
+            list-style-type: none;
+    
+            li {
+                line-height: 70px; 
+                padding: 0px 30px;
+                a{
+                color: $skoroBela;
+                text-decoration: none;
+                border-bottom: 1px solid $skoroBela;
+                &:hover{
+                    color: $svetloPlava;
+                }
+                }
+
+            }
+        }
+    }
+}
+
+@mixin fleks-kutija{
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: center;
+    list-style: none;
+}
+
+.flex-kutija {
+    @include fleks-kutija;
+    /*
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: space-around;
+    list-style: none;
+    */
+  }
+  
+.flex-item {
+    text-align: center;
+
+  } 
+
+figcaption{
+    text-align: center;
+    font-weight: 400;
+}
+
+.meni{
+    @include fleks-kutija;
+
+}
+
+
+/* CEO FLEX PROMENITI U MIXIN? */
+
+#banner{
+    background-image: url('../images/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    h1{
+        font-size: 90px;
+        color: $skoroBela;
+        text-align: center;
+
+    }
+}
+#skills{
+    .red-vestina{
+        @include fleks-kutija;
+        justify-content: space-around;
+
+      /*  justify-content: space-around;*/
+        margin-bottom: 100px;
+    }
+
+    figure img{ 
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.omotac{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+#projects{
+    .red-projekata{
+        @include fleks-kutija;
+        img{
+            width: 600px;
+            height: 350px;
+            margin: 0px 50px;
+
+        }
+        p{
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 20px;
+        }
+    }
+}
+
+
+
+#about{
+    width: 100%;
+   /* @include fleks-kutija;*/
+}
+
+#kutija_autor{
+	float: left;
+	width: 55%;
+  	box-sizing: border-box;
+    h4{
+        font-size: 32px;
+    }
+    p{
+        font-size: 28px;
+    }
+}
+
+#selfi{
+	float: right;
+    img{
+    border-radius: 10px;
+    }
+}
+
+h2{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-size: 40px;
+
+}
+
+h5{
+    text-align: center;
+    font-size: 25px;
+}
+
+/* contact */
+
+
+#contact{
+    width: 100%;
+
+    #forma{
+        background-color: #e3e3e3;
+        width: 60%;
+        margin: 0 auto;
+        padding: 30px 30px;
+        text-align: left;
+        border-radius: 15px;
+        border: 4px solid $tamnoSiva;
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .forma_red > * {
+            display: block;
+            margin: 0px auto;
+            width: 100%;
+            /*margin: 20px 5px 5px 0px;*/
+            box-sizing: border-box;
+        }
+        label{
+            padding-top: 40px;
+        }
+        input, select{
+            padding: 20px 5px;
+        }
+        
+        textarea::placeholder{
+            padding: 35px 5px 0px 5px;
+        }
+        
+        button{
+            margin-top: 20px;
+            height: 60px;
+            width: 120px;
+            &:hover{
+                background-color: $tamnoSiva;
+            }
+        }  
+    }
+
+    #socials{
+        @include fleks-kutija;
+        i{
+            padding: 30px;
+            font-size: 50px;
+            color: $tamnoSiva;
+        }
+    }
+}
+footer{
+    width: 100%;
+    background-color: $tamnoSiva;
+    padding-top: 50px;
+    margin-top: 50px;
+    text-align: center;
+    color: $skoroBela;
+    i {
+        color: $skoroBela;
+        font-size: 50px;
+        margin-bottom: 10px;
+        &:hover{
+            color: $svetloPlava;
+        }
+    }
+}
+
+
+
+
